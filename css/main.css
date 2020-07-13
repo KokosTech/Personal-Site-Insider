@@ -1,0 +1,14 @@
+.content{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content h1{
+    font-size: 60px;
+}
+
+.content h2{
+    font-size: 45px;
+}
