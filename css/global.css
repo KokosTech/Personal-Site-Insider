@@ -25,8 +25,6 @@
     color: var(--color-font);
 }
 
-
-
 html{
     font-family: 'Product Sans Black Regular';
     background-color: var(--color-background);
@@ -51,7 +49,11 @@ h1, h2, h3, h4, h5, h6, p, a{
     box-shadow: 0px 0px 10px var(--color-shadow);
     border-radius: 13px;
     padding: 10px;
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(25px);
+}
+
+.div img{
+    border-radius: 10px;
 }
 
 /* Navigation */
@@ -105,6 +107,18 @@ h1, h2, h3, h4, h5, h6, p, a{
     justify-content: space-between;
 }
 
+/* Content */
+
+#content{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    height: calc(100% - 140px);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Global */
+
 @media screen and (max-width: 800px){
     .container{
         margin-left: 8.305px;
@@ -115,12 +129,6 @@ h1, h2, h3, h4, h5, h6, p, a{
         padding-left: 8.305px;
         padding-right: 8.305px;
     }
-}
 
-/* Content */
-
-#content{
-    padding-top: 70px;
-    padding-bottom: 70px;
-    height: calc(100% - 140px);
+    
 }
