@@ -53,8 +53,9 @@ body{
 }
 
 #qi img{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: 100%;
+    margin: 0 0;
+    padding: 0 0;
 }
 
 #qi p{

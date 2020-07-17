@@ -8,6 +8,11 @@ let strlb = strlw.replace(/w/g , 'b');
 
 let strtw = tog.getAttribute('src');
 let strtb = strtw.replace('sun' , 'moon');
+
+document.getElementById('lg').addEventListener('click' , function(){
+    window.open('https://kaloyan.tech/' , '_self')
+});
+
 // function to set a given theme/color-scheme
 
 
