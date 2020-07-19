@@ -1,8 +1,5 @@
 .content{
-    text-align: left;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 70px;
 }
 
 .content h1{
@@ -11,4 +8,28 @@
 
 .content h2{
     font-size: 45px;
+}
+
+#fpt{
+    height: calc(100vh - 70px);
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#fpt a{
+    position: absolute;
+    bottom: 70px;
+    right: 50;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#blog{
+    height: calc(100vh - 140px);
+    margin-top: 70px;
 }

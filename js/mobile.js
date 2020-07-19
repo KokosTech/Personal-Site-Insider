@@ -43,6 +43,7 @@ function mobile(){
         con.appendChild(navbar);
         hhi.appendChild(con);
         var bb = document.getElementById('body');
+        bb.style.marginBottom = '70px'
         bb.appendChild(hhi);
 
         for(var i = 0; i < cons.length; ++i){
