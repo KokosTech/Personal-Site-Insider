@@ -5,6 +5,14 @@
     src: local('Product Sans Black Regular'), url('../fonts/ProductSans-Black.woff') format('woff');
 }
 
+@font-face{
+    font-family: 'Product Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Product Sans Black Regular'), url('../fonts/ProductSans-Regular.woff') format('woff');
+
+}
+
 ::-webkit-scrollbar{
     display: none;
 }
@@ -17,28 +25,34 @@
 .theme-light {
     --color-primary: #ffffffc2;
     --color-background: #f2f2f2;
+    --color-hover: #fffffff6;
     --color-font: #000000;
     --color-shadow: #81818185;
+    --color-box-shadow: #818181b9;
+    --color-img: #cfcfcfb9;
     transition: ease-in 250ms;
 }
 
 .theme-dark {
     --color-primary: #3f3f3fb0;
     --color-background: #000000;
+    --color-hover: rgba(78, 78, 78, 0.7);
     --color-font: #ffffff;
     --color-shadow: none;
+    --color-box-shadow: #88888860;
+    --color-img: #636363ce;
     transition: ease-in 250ms;
 }
 
 *{
-    color: var(--color-font);
+    color: var(--color-font) !important;
+    font-family: 'Product Sans Black Regular' !important;
 }
 
 html{
-    font-family: 'Product Sans Black Regular';
+
     background-color: var(--color-background);
     margin: 0 0;
-    height: 100%;
     scroll-behavior: smooth;
 }
 
@@ -61,6 +75,15 @@ h1, h2, h3, h4, h5, h6, p, a{
     backdrop-filter: blur(25px);
 }
 
+.divbtn{
+    transition: 500ms;
+}
+
+.divbtn:hover{
+    box-shadow: 5px 5px 10px 1px var(--color-box-shadow);
+    transition: 500ms;
+}
+
 .div img{
     border-radius: 10px;
 }
@@ -76,7 +99,9 @@ h1, h2, h3, h4, h5, h6, p, a{
 }
 
 .container{
-    width: 80%;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
     padding: 0 0;
     height: 30px;
     padding: 10px;

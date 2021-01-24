@@ -45,7 +45,7 @@ function mobile(){
         var bb = document.getElementById('body');
         bb.style.marginBottom = '70px'
         bb.appendChild(hhi);
-
+        bb.style.marginBottom = '70px'
         for(var i = 0; i < cons.length; ++i){
             cons[i].style.width = '95%'
         }

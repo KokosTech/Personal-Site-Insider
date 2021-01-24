@@ -1,6 +1,4 @@
-.content{
-    margin-bottom: 70px;
-}
+
 
 .content h1{
     font-size: 60px;
@@ -11,7 +9,7 @@
 }
 
 #fpt{
-    height: calc(100vh - 70px);
+    height: calc(100vh - 140px);
     text-align: left;
     display: flex;
     align-items: center;
@@ -29,7 +27,3 @@
     padding: 10px;
 }
 
-#blog{
-    height: calc(100vh - 140px);
-    margin-top: 70px;
-}
