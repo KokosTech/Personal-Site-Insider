@@ -24,22 +24,22 @@
 
 .theme-light {
     --color-primary: #ffffffc2;
-    --color-background: #f2f2f2;
+    --color-background: linear-gradient(to right, #ece9e6, #ffffff);
     --color-hover: #fffffff6;
     --color-font: #000000;
     --color-shadow: #81818185;
-    --color-box-shadow: #818181b9;
+    --color-box-shadow: #81818142;
     --color-img: #cfcfcfb9;
     transition: ease-in 250ms;
 }
 
 .theme-dark {
     --color-primary: #3f3f3fb0;
-    --color-background: #000000;
+    --color-background: linear-gradient(to right, #232526, #414345); 
     --color-hover: rgba(78, 78, 78, 0.7);
     --color-font: #ffffff;
-    --color-shadow: none;
-    --color-box-shadow: #88888860;
+    --color-shadow: #ffffff49;
+    --color-box-shadow: #d7e4e434;
     --color-img: #636363ce;
     transition: ease-in 250ms;
 }
@@ -50,8 +50,7 @@
 }
 
 html{
-
-    background-color: var(--color-background);
+    background: var(--color-background);
     margin: 0 0;
     scroll-behavior: smooth;
 }
@@ -65,12 +64,62 @@ h1, h2, h3, h4, h5, h6, p, a{
     text-decoration: none;
 }
 
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
 
+#settings_header{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  .modal-content {
+    margin: auto;
+    padding: 30px;
+    width: 80%;
+    height: calc(100vh - 170px);
+    overflow: visible;
+    transition: 500ms;
+  }
+  
+  /* The Close Button */
+  .close {
+    font-size: 28px;
+    font-weight: bold;
+    transition: 500ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    background-color: rgba(255, 0, 0, 0.562);
+    text-decoration: none;
+    cursor: pointer;
+    transition: 500ms;
+  }
 
 .div{
     background-color: var(--color-primary);
-    box-shadow: 0px 0px 10px var(--color-shadow);
-    border-radius: 13px;
+    box-shadow: 5px 5px 10px var(--color-box-shadow), 
+            -5px -5px 15px var(--color-box-shadow);
+    border-radius: 15px;
     padding: 10px;
     backdrop-filter: blur(25px);
 }
@@ -85,7 +134,7 @@ h1, h2, h3, h4, h5, h6, p, a{
 }
 
 .div img{
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 /* Navigation */
@@ -160,6 +209,9 @@ h1, h2, h3, h4, h5, h6, p, a{
     .hh1{
         padding-left: 8.305px;
         padding-right: 8.305px;
+    }
+    .modal-content{
+        height: calc(100vh - 210px);
     }
 
     
